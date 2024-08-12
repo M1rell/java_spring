@@ -24,5 +24,11 @@ dependencies {
 }
 
 tasks.named('test'){
-    useJUnitPlataform()
+    useJUnitPlatform()
+}
+
+java{
+    toolchain{
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
